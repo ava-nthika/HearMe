@@ -67,13 +67,13 @@ npm run dev
 
 ## Project Documentation
 ### Screenshots:
-![Main Interface: Clean input area with calming pastel theme]"C:\Users\LENOVO\Desktop\HearMe\maininterface.png"
+![Main Interface: Clean input area with calming pastel theme]!(<maininterface-1.png>)
 *Main Interface: Clean input area with calming pastel theme.*
 
-![Analysis Results: Structured feedback with situational context badge]"C:\Users\LENOVO\Desktop\HearMe\S2.png"
+![Analysis Results: Structured feedback with situational context badge]!(<S2-1.png>)
 *Analysis Results: Structured feedback with situational context badge.*
 
-![Weekly Insights: Visual distribution of emotional patterns]"C:\Users\LENOVO\Desktop\HearMe\s3.png"
+![Weekly Insights: Visual distribution of emotional patterns]!(<s3-1.png>)
 *Weekly Insights: Visual distribution of emotional patterns.*
 
 ### Diagrams:
