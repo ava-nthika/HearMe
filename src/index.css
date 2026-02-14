@@ -1,0 +1,145 @@
+:root {
+  --bg-gradient: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --primary-color: #66bb6a;
+  --secondary-color: #81c784;
+  --accent-color: #4caf50;
+  --text-dark: #2e3440;
+  --text-light: #4c566a;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --border-radius: 20px;
+  --font-main: 'Inter', sans-serif;
+  --font-display: 'Outfit', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: var(--text-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+#root {
+  width: 100%;
+  max-width: 800px;
+}
+
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: var(--shadow);
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 187, 106, 0.2);
+}
+
+button:hover {
+  background: var(--accent-color);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.3);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.5);
+  font-family: inherit;
+  font-size: 1rem;
+  resize: none;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: var(--primary-color);
+  background: white;
+  box-shadow: 0 0 0 4px rgba(102, 187, 106, 0.1);
+}
+
+.insights-bar {
+  height: 24px;
+  background: #f1f8e9;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.insights-fill {
+  height: 100%;
+  background: var(--primary-color);
+  transition: width 1s ease-out;
+}
+
+.insight-item {
+  margin-bottom: 1.5rem;
+}
+
+.insight-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
