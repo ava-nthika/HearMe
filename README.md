@@ -67,14 +67,12 @@ npm run dev
 
 ## Project Documentation
 ### Screenshots:
-![Main Interface: Clean input area with calming pastel theme]!(<maininterface-1.png>)
-*Main Interface: Clean input area with calming pastel theme.*
-
-![Analysis Results: Structured feedback with situational context badge]!(<S2-1.png>)
-*Analysis Results: Structured feedback with situational context badge.*
-
-![Weekly Insights: Visual distribution of emotional patterns]!(<s3-1.png>)
-*Weekly Insights: Visual distribution of emotional patterns.*
+![Main Interface](./screenshots/maininterface.png)
+*Main Interface: Our calming pastel green input area.*
+![Emotional Analysis](./screenshots/S2.png)
+*Analysis Results: Showing the situational context and empathetic reply.*
+![Weekly Insights](./screenshots/s3.png)
+*Weekly Insights: Visualizing the mood patterns over 7 days.*
 
 ### Diagrams:
 #### System Architecture:
