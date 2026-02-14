@@ -1,4 +1,4 @@
-<p align="center"><img src="./img.png" alt="Project Banner" width="100%"></p>
+<p align="center"><img src="./banner.jpg" alt="Project Banner" width="100%"></p>
 
 # HearMe 🎯
 ### Your AI-Powered Emotional Companion
@@ -12,7 +12,7 @@
 - Avanthika.c - MAMO
 - Shana Subair - MAMO
 
-**Hosted Project Link:** [https://hear-me-two.vercel.app/](https://hear-me-two.vercel.app/)
+**Hosted Project Link:** https://hear-me-two.vercel.app/
 
 ## Project Description
 HearMe is a modern web application designed to act as an interactive emotional companion. Unlike standard mood trackers, HearMe "listens" to the stories users tell, identifies the underlying emotional state using specialized sentiment logic, and responds with tailored empathetic support, psychological insights, and musical recommendations.
@@ -67,13 +67,13 @@ npm run dev
 
 ## Project Documentation
 ### Screenshots:
-![Main Interface: Clean input area with calming pastel theme]([INSERT_SCREENSHOT_PATH_1])
+![Main Interface: Clean input area with calming pastel theme]"C:\Users\LENOVO\Desktop\HearMe\maininterface.png"
 *Main Interface: Clean input area with calming pastel theme.*
 
-![Analysis Results: Structured feedback with situational context badge]([INSERT_SCREENSHOT_PATH_2])
+![Analysis Results: Structured feedback with situational context badge]"C:\Users\LENOVO\Desktop\HearMe\S2.png"
 *Analysis Results: Structured feedback with situational context badge.*
 
-![Weekly Insights: Visual distribution of emotional patterns]([INSERT_SCREENSHOT_PATH_3])
+![Weekly Insights: Visual distribution of emotional patterns]"C:\Users\LENOVO\Desktop\HearMe\s3.png"
 *Weekly Insights: Visual distribution of emotional patterns.*
 
 ### Diagrams:
