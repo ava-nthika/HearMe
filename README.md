@@ -1,90 +1,117 @@
-HearMe
-Basic Details
-Team Name: HackHive
+<p align="center"><img src="./img.png" alt="Project Banner" width="100%"></p>
 
-Team Members
+# HearMe 🎯
+### Your AI-Powered Emotional Companion
 
-Member 1: Avanthika.c- MAMO
+---
 
-Member 2: Shana Subair - MAMO
+## Basic Details
+**Team Name:** HackHive
 
-Hosted Project Link
-https://hear-me-two.vercel.app/
+**Team Members:** 
+- Avanthika.c - MAMO
+- Shana Subair - MAMO
 
-Project Description
-HearMe is an interactive AI-powered emotional companion designed to provide a safe space for users to express their feelings. By using sentiment analysis, the application listens to user stories, identifies their emotional state, and provides personalized self-care tips and musical recommendations to improve their mental well-being.
+**Hosted Project Link:** [https://hear-me-two.vercel.app/](https://hear-me-two.vercel.app/)
 
-The Problem Statement
-In an increasingly fast-paced digital world, many individuals experience "emotional loneliness" or burnout but lack an immediate, non-judgmental outlet to vent or process their day. Traditional journaling can feel like a chore, and many people find it difficult to identify exactly what they need (a rest, a distraction, or a motivation boost) when they are overwhelmed.
+## Project Description
+HearMe is a modern web application designed to act as an interactive emotional companion. Unlike standard mood trackers, HearMe "listens" to the stories users tell, identifies the underlying emotional state using specialized sentiment logic, and responds with tailored empathetic support, psychological insights, and musical recommendations.
 
-The Solution
-HearMe solves this by offering an empathetic digital interface that "hears" the user.
+## The Problem & Solution
+**The Problem:** In today's fast-paced world, many individuals experience "emotional loneliness" or burnout without an immediate, non-judgmental outlet to process their feelings. Traditional journaling can feel like a chore, and users often struggle to identify what exactly they need when they are overwhelmed.
 
+**The Solution:** HearMe provides a safe, digital space for instant venting. It uses an advanced situational "Story Recognition" engine to validate specific life events (like work stress or relationship issues) while providing scientifically-backed tips and curated soundtracks to gently regulate the user's mood.
 
+---
 
-Instant Feedback: The app categorizes the "vibe" and offers immediate, scientifically-backed tips (like NSDR or Box Breathing).
+## Technical Details
+**Technologies Used:**
+- **Languages:** JavaScript (ES6+), HTML5, CSS3
+- **Frameworks:** React.js, Vite
+- **State Management:** React Hooks (useState, useEffect)
+- **Deployment:** Vercel
+- **Persistence:** LocalStorage API
+- **Design:** Modern Glassmorphism & Vanilla CSS
 
-Progress Tracking: A weekly mood tracker helps users visualize their emotional patterns over time, encouraging long-term mental health awareness.
+---
 
-Technical Details
-Technologies/Components Used
+## Features
+1. **Story Recognition & Contextual Empathy:** Identifies specific situational themes such as Work/School, Relationships, Loss, and Success, providing grounded, contextual validation.
+2. **Expanded Emotional Brain:** Detects 15+ distinct emotional states (e.g., Proud, Overwhelmed, Inspired, Anxious) with high-quality, supportive feedback.
+3. **Weekly Mood Insights:** A persistence-based visual distribution of moods over the last 7 days, helping users identify emotional patterns and trends.
+4. **Structured AI Responses:** Every analysis includes empathetic acknowledgment, practical "Why it works" psychological tips, and balanced song suggestions.
+5. **Responsive Glassmorphic UI:** A premium pastel green aesthetic with subtle micro-animations and smooth transitions, fully optimized for mobile and desktop.
 
-Languages used: HTML5, CSS3, JavaScript (ES6+)
+---
 
-Frameworks used: React CSS (via CDN)
+## Implementation
+### Installation:
+```bash
+# Clone the repository
+git clone https://github.com/your-repo-link/HearMe.git
 
-Libraries used: Web Speech API (Browser Native), LocalStorage API
+# Navigate to the project directory
+cd HearMe
 
-Tools used: VS Code, Vercel (Deployment), Git
+# Install dependencies
+npm install
+```
 
-Features
+### Run:
+```bash
+# Start the development server
+npm run dev
+```
 
-Sentiment Analysis Engine: A custom-built keyword and regex-based logic that maps complex inputs to core emotional states (Radiant, Healing, Electric, Recovery, Steady).
+---
 
-Weekly Vibe Tracker: A persistence-based bar graph that tracks and displays the user's emotional journey over a 7-day period.
+## Project Documentation
+### Screenshots:
+![Main Interface: Clean input area with calming pastel theme]([INSERT_SCREENSHOT_PATH_1])
+*Main Interface: Clean input area with calming pastel theme.*
 
-Dynamic Recommendations: Curated self-care actions and soundtracks tailored to the detected mood.
+![Analysis Results: Structured feedback with situational context badge]([INSERT_SCREENSHOT_PATH_2])
+*Analysis Results: Structured feedback with situational context badge.*
 
-Responsive Glassmorphic UI: A modern, calming dark-mode interface designed for both desktop and mobile use.
+![Weekly Insights: Visual distribution of emotional patterns]([INSERT_SCREENSHOT_PATH_3])
+*Weekly Insights: Visual distribution of emotional patterns.*
 
-Implementation
-Installation
-Since this is a frontend-only project, no heavy installation is required.
+### Diagrams:
+#### System Architecture:
+The application follows a modular React architecture. The UI components communicate with a central `moodLogic` engine that performs keyword and synonym matching against situational (`STORY_DATA`) and emotional (`MOOD_DATA`) datasets. State is managed locally and persisted via the `LocalStorage API`.
 
-Clone the repository: git clone [your-repo-link]
+#### Workflow:
+1. **User Input:** User shares their story or mood in the text area.
+2. **Analysis:** The system scans for situational keywords, then emotional keywords.
+3. **Response Generation:** Logic merges detected context and emotion into a structured supportive response.
+4. **Update UI:** Results fade in; Weekly Insights and History are updated instantly.
 
-Navigate to the folder: cd HearMe
+---
 
-Run
+## Project Demo
+### Video:
+[Watch the HearMe Demo Link]([INSERT_DEMO_VIDEO_LINK])
 
-Open index.html directly in your browser.
+---
 
+## AI Tools Used
+**Tool:** Antigravity (Cortex)
+**Purpose:** HearMe was developed using Antigravity for UI generation, complex logic implementation (Story Recognition), and architectural refinements.
+**Prompts:**
+- "Create a modern pastel green UI with glassmorphism for a mood tracker."
+- "Implement a logic that detects specific life stories like work stress or relationship issues and bridges them to emotional support."
+- "Create a weekly insights section that visualizes mood distribution from localStorage."
 
+---
 
-Project Documentation
-Screenshots
+## Team Contributions
+- **Avanthika.c:** Core React Architecture, Mood Detection Logic, and UI Polish.
+- **Shana Subair:** Feature Design, Weekly Insights Implementation, and Deployment.
 
-Main Interface: Showing the pulsing orb and story input area.
+---
 
-Analysis Results: Showing the mood badge, self-care tips, and song recommendations.
+## License
+This project is licensed under the MIT License.
 
-Weekly Tracker: Visualizing the 7-day emotional pulse graph.
-
-Diagrams
-
-System Architecture:
-
-The system is a client-side application where the UI sends text/voice data to a logic controller. This controller determines the emotion and triggers a UI state change while simultaneously updating the browser's local database.
-
-Application Workflow:
-
-AI Tools Used
-Tool Used: Gemini / ChatGPT
-
-Purpose: Initial boilerplate for the sentiment logic and CSS animation refinements.
-
-Key Prompts Used: "Create a modern dark-mode UI with Tailwind CSS," "Explain how to implement Web Speech API in vanilla JS," "Help debug the LocalStorage weekly graph mapping."
-
-
-
-
+---
+Made with ❤️ at TinkerHub
